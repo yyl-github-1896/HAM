@@ -73,7 +73,7 @@ The SVHN dataset will be downloaded automatically when running the code.
 
 you can run the following script:
 ```
-bash ./515_6_wrong_early3_epo50.sh
+bash ./718_7_svhn_wrong_early5_epo50.sh
 ```
 
 
@@ -81,7 +81,7 @@ bash ./515_6_wrong_early3_epo50.sh
 
 ### Prepare the data
 
-The ImageNette dataset could be downloaded from [data](https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz.)
+The ImageNette dataset could be downloaded from [data](https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz.).
 
 ### Running the HAM method on ImageNette
 
