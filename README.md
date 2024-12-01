@@ -39,83 +39,55 @@ training methods
 
 ## CIFAR-10
 
-### Prepare the data and models
+### Prepare the data
 
-Please download the [pretrained models](https://drive.google.com/file/d/1Oj4-IrZMPDhY-tXmDfmdegBFJPbzplCr/view?usp=drive_link) and place them under ./ImageNet/, respectively. The CIFAR-10 dataset will be downloaded automatically when running the code. The directory structure should be like:
+The CIFAR-10 dataset will be downloaded automatically when running the code.
 
+### Running the HAM method on CIFAR-10
+
+you can run the following script:
 ```
-CIFAR-10
-+-- checkpoints_CIFAR-10
-```
-
-### Running the attack
-
-Enter the CIFAR-10 directory:
-
-```
-cd ./CIFAR-10
+bash ./515_6_wrong_early3_epo50.sh
 ```
 
-Train the QAA substitute model:
-```
-python train.py --stochastic 1 --ckpt_id 120603 --device 0 
-```
+## CIFAR-100
 
-Generate adversarial examples with the QAA substitute model and the MI-FGSM attack:
+### Prepare the data
+
+The CIFAR-100 dataset will be downloaded automatically when running the code.
+
+### Running the HAM method on CIFAR-100
+
+you can run the following script:
 ```
-python attack.py --attack pgd --arch resnet56 --w_bit 2 --a_bit 2 --quantize_method apot --ckpt_name 120603 --stochastic 1 --device 0
+bash ./515_6_wrong_early3_epo50.sh
+
+
+## SVHN
+
+### Prepare the data
+
+The SVHN dataset will be downloaded automatically when running the code.
+
+### Running the HAM method on SVHN
+
+you can run the following script:
 ```
+bash ./515_6_wrong_early3_epo50.sh
 
-Or you can run the following script to evaluate on multiple target models:
+
+## ImageNette
+
+### Prepare the data
+
+The ImageNette dataset could be downloaded from [data](https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz.)
+
+### Running the HAM method on ImageNette
+
+you can run the following script:
 ```
-bash ./fp_benchmark.sh
+bash ./0301_1_aham_netee_p18_nonorm.sh
 ```
-## ImageNet
-
-### Prepare the data and models
-
-Please download the [data](https://drive.google.com/drive/folders/1CfobY6i8BfqfWPHL31FKFDipNjqWwAhS) and [pretrained models](https://drive.google.com/file/d/1Oj4-IrZMPDhY-tXmDfmdegBFJPbzplCr/view?usp=drive_link), unzip the file and place the data and pretrained models under ./ImageNet/. The directory should be like:
-
-```
-ImageNet
-+-- val_rs
-+-- val_rs.csv
-+-- checkpoints_ImageNet
-```
-
-### Running the attack
-
-Enter the ImageNet directory:
-
-```
-cd ./ImageNet
-```
-
-Train the QAA substitute model:
-```
-python -m torch.distributed.launch --nproc_per_node=6 train.py --data /data/yyl/data/ImageNet/ --stochastic 1 --ckpt_id 120603
-```
-
-Generate adversarial examples with the QAA substitute model and the MI-FGSM attack:
-```
-python attack.py --data_source /data/yyl/data/ImageNet/val_rs --arch resnet34 --attack admix --w_bit 2 --a_bit 2 --quantize_method apot --stochastic 1 --ckpt_id 120603 --device 0
-```
-
-Evaluate the attack success rates on Inception_v3 target model:
-```
-python evaluate.py --arch inception_v3 --output_dir ./adv_imgs/apot/resnet34_w2a2_stochastic/admix --device 0
-```
-
-## Acknowledgments
-Our code refers to:
-
-[VT](https://github.com/JHL-HUST/VT)
-
-[QDrop](https://github.com/wimh966/QDrop)
-
-[APoT_Quantization](https://github.com/yhhhli/APoT_Quantization)
-
-[PyTorch_CIFAR10](https://github.com/huyvnphan/PyTorch_CIFAR10)
 
 
 ## About us
