@@ -74,6 +74,8 @@ The SVHN dataset will be downloaded automatically when running the code.
 you can run the following script:
 ```
 bash ./515_6_wrong_early3_epo50.sh
+```
+
 
 ## ImageNette
 
