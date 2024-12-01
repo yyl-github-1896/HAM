@@ -21,4 +21,5 @@ the model can be efficiently and effectively improved. Extensive
 experimental results on four image classification datasets demonstrate the improvement of HAM in robust fairness and training
 efficiency compared to several state-of-the-art fair adversarial
 training methods
+
 ![fig13_1](https://github.com/user-attachments/assets/b42c42ee-1db4-4773-a568-1d7afd21d808)
