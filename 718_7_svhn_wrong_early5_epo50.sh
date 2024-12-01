@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES='0' python GAIRAT_wrong_early_time_svhn.py --dataset svhn --net preactresnet18 --out-dir ./results/718_7_svhn_wrong_early5_epo50/  --begin_epoch 50 --classify_step 5 --resume ./results/608_3_svhn_wrong/48.pth.tar

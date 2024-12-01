@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES='5' python GAIRAT_wrong_early_time.py --net preactresnet18 --out-dir ./results/515_6_wrong_early3_epo50/ --resume ./results/at_p18_norm2/48.pth.tar --begin_epoch 50 --classify_step 3
