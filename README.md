@@ -36,6 +36,40 @@ training methods
 + tqdm >= 4.62.3
 
 
+
+## CIFAR-10
+
+### Prepare the data and models
+
+Please download the [pretrained models](https://drive.google.com/file/d/1Oj4-IrZMPDhY-tXmDfmdegBFJPbzplCr/view?usp=drive_link) and place them under ./ImageNet/, respectively. The CIFAR-10 dataset will be downloaded automatically when running the code. The directory structure should be like:
+
+```
+CIFAR-10
++-- checkpoints_CIFAR-10
+```
+
+### Running the attack
+
+Enter the CIFAR-10 directory:
+
+```
+cd ./CIFAR-10
+```
+
+Train the QAA substitute model:
+```
+python train.py --stochastic 1 --ckpt_id 120603 --device 0 
+```
+
+Generate adversarial examples with the QAA substitute model and the MI-FGSM attack:
+```
+python attack.py --attack pgd --arch resnet56 --w_bit 2 --a_bit 2 --quantize_method apot --ckpt_name 120603 --stochastic 1 --device 0
+```
+
+Or you can run the following script to evaluate on multiple target models:
+```
+bash ./fp_benchmark.sh
+```
 ## ImageNet
 
 ### Prepare the data and models
@@ -70,41 +104,6 @@ python attack.py --data_source /data/yyl/data/ImageNet/val_rs --arch resnet34 --
 Evaluate the attack success rates on Inception_v3 target model:
 ```
 python evaluate.py --arch inception_v3 --output_dir ./adv_imgs/apot/resnet34_w2a2_stochastic/admix --device 0
-```
-
-
-## CIFAR-10
-
-### Prepare the data and models
-
-Please download the [pretrained models](https://drive.google.com/file/d/1Oj4-IrZMPDhY-tXmDfmdegBFJPbzplCr/view?usp=drive_link) and place them under ./ImageNet/, respectively. The CIFAR-10 dataset will be downloaded automatically when running the code. The directory structure should be like:
-
-```
-CIFAR-10
-+-- checkpoints_CIFAR-10
-```
-
-### Running the attack
-
-Enter the CIFAR-10 directory:
-
-```
-cd ./CIFAR-10
-```
-
-Train the QAA substitute model:
-```
-python train.py --stochastic 1 --ckpt_id 120603 --device 0 
-```
-
-Generate adversarial examples with the QAA substitute model and the MI-FGSM attack:
-```
-python attack.py --attack pgd --arch resnet56 --w_bit 2 --a_bit 2 --quantize_method apot --ckpt_name 120603 --stochastic 1 --device 0
-```
-
-Or you can run the following script to evaluate on multiple target models:
-```
-bash ./fp_benchmark.sh
 ```
 
 ## Acknowledgments
