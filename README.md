@@ -39,7 +39,7 @@ training methods
 
 ## CIFAR-10
 
-### Prepare the data
+### Prepare the data and models
 
 Please download the [pretrained models](https://drive.google.com/file/d/1no9NsTQhlr14_vPgt-3FlGJ00YAswf2L/view?usp=drive_link) and place them under ./results/at_p18_norm2, respectively. The CIFAR-10 dataset will be downloaded automatically when running the code.The directory structure should be like:
 
