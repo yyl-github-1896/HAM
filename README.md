@@ -41,7 +41,7 @@ training methods
 
 ### Prepare the data and models
 
-Please download the [pretrained models](https://drive.google.com/file/d/1jfgJvq-kuu2f-XB-3Z5ml98ngNJX7zUe/view?usp=drive_link) and place them under ./results/515_6_wrong_early3_epo50. The CIFAR-10 dataset will be downloaded automatically when running the code.The directory structure should be like:
+Please download the [pretrained models](https://drive.google.com/file/d/1jfgJvq-kuu2f-XB-3Z5ml98ngNJX7zUe/view?usp=drive_link) and place them under ./results/515_6_wrong_early3_epo50. The CIFAR-10 dataset will be downloaded automatically when running the code. The directory structure should be like:
 
 ```
 results
@@ -60,7 +60,7 @@ bash ./515_6_wrong_early3_epo50.sh
 
 ### Prepare the data and models
 
-Please download the [pretrained models](https://drive.google.com/file/d/1AhvShkc799QpT4I3LnINirieHudHWzrU/view?usp=drive_link) and place them under ./results/0726_2_cifar100_ham_keep_clean0d3_60epo. The CIFAR-100 dataset will be downloaded automatically when running the code.The directory structure should be like:
+Please download the [pretrained models](https://drive.google.com/file/d/1AhvShkc799QpT4I3LnINirieHudHWzrU/view?usp=drive_link) and place them under ./results/0726_2_cifar100_ham_keep_clean0d3_60epo. The CIFAR-100 dataset will be downloaded automatically when running the code. The directory structure should be like:
 
 ```
 results
@@ -79,7 +79,7 @@ bash ./0726_2_cifar100_ham_keep_clean0d3_60epo.sh
 
 ### Prepare the data and models
 
-Please download the [pretrained models](https://drive.google.com/file/d/1EyLnIk-UIPVVSsLz3B1jwxJxXFTji-Li/view?usp=drive_link) and place them under ./results/718_7_svhn_wrong_early5_epo50. The SVHN dataset will be downloaded automatically when running the code.The directory structure should be like:
+Please download the [pretrained models](https://drive.google.com/file/d/1EyLnIk-UIPVVSsLz3B1jwxJxXFTji-Li/view?usp=drive_link) and place them under ./results/718_7_svhn_wrong_early5_epo50. The SVHN dataset will be downloaded automatically when running the code. The directory structure should be like:
 
 ```
 results
@@ -99,7 +99,7 @@ bash ./718_7_svhn_wrong_early5_epo50.sh
 
 ### Prepare the data and models
 
-Please download the [pretrained models](https://drive.google.com/file/d/1WqAzuXXU363-H2PS0ByycypvcbASMUp7/view?usp=drive_link) and place them under ./results/0301_1_aham_netee_p18_nonorm. The ImageNette dataset could be downloaded from [data](https://drive.google.com/file/d/1nyYlZFvpSRl_ogmaO0cm8-hMT4YMYe9D/view?usp=drive_link).The directory structure should be like:
+Please download the [pretrained models](https://drive.google.com/file/d/1WqAzuXXU363-H2PS0ByycypvcbASMUp7/view?usp=drive_link) and place them under ./results/0301_1_aham_netee_p18_nonorm. The ImageNette dataset could be downloaded from [data](https://drive.google.com/file/d/1nyYlZFvpSRl_ogmaO0cm8-hMT4YMYe9D/view?usp=drive_link). The directory structure should be like:
 
 ```
 imagenette2-160
