@@ -120,9 +120,6 @@ you can run the following script:
 bash ./0301_1_aham_netee_p18_nonorm.sh
 ```
 
-## HAM pretrained checkpoints
-We also provide the [checkpoints](https://drive.google.com/drive/folders/1WQ17FUmkwgSpg09o_0frxZUhYPk-2Cyk?usp=drive_link) pretrained by our HAM method. 
-
 
 ## About us
 We are in XJTU-AISEC lab led by [Prof. Chao Shen](https://gr.xjtu.edu.cn/en/web/cshen/home), [Prof. Chenhao Lin](https://gr.xjtu.edu.cn/en/web/linchenhao), [Prof. Zhengyu Zhao](https://zhengyuzhao.github.io/), Prof. Qian Li, and etc. in the School of Cyber Science and Engineering, Xi'an Jiaotong University.
