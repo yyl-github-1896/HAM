@@ -81,7 +81,7 @@ bash ./718_7_svhn_wrong_early5_epo50.sh
 
 ### Prepare the data
 
-The ImageNette dataset could be downloaded from [data](https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz.).
+The ImageNette dataset could be downloaded from [data][(https://drive.google.com/file/d/1nyYlZFvpSRl_ogmaO0cm8-hMT4YMYe9D/view?usp=sharing)].
 
 ### Running the HAM method on ImageNette
 
