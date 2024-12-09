@@ -41,7 +41,13 @@ training methods
 
 ### Prepare the data
 
-The CIFAR-10 dataset will be downloaded automatically when running the code.
+Please download the [pretrained models](https://drive.google.com/file/d/1no9NsTQhlr14_vPgt-3FlGJ00YAswf2L/view?usp=drive_link) and place them under ./results/at_p18_norm2, respectively. The CIFAR-10 dataset will be downloaded automatically when running the code.The directory structure should be like:
+
+```
+results
++-- at_p18_norm2
+    +-- checkpoints_cifar10
+```
 
 ### Running the HAM method on CIFAR-10
 
@@ -67,7 +73,13 @@ bash ./0726_2_cifar100_ham_keep_clean0d3_60epo.sh
 
 ### Prepare the data and models
 
-Please download the pretrained models and place them under ./SVHN/, respectively. The SVHN dataset will be downloaded automatically when running the code.
+Please download the [pretrained models](https://drive.google.com/file/d/1h8eati7E5SjJLx4F750HHD67K23f65KN/view?usp=drive_link) and place them under ./results/608_3_svhn_wrong, respectively. The SVHN dataset will be downloaded automatically when running the code.The directory structure should be like:
+
+```
+results
++-- 608_3_svhn_wrong
+    +-- checkpoints_svhn
+```
 
 ### Running the HAM method on SVHN
 
@@ -81,7 +93,13 @@ bash ./718_7_svhn_wrong_early5_epo50.sh
 
 ### Prepare the data
 
-The ImageNette dataset could be downloaded from [data](https://drive.google.com/file/d/1nyYlZFvpSRl_ogmaO0cm8-hMT4YMYe9D/view?usp=drive_link).
+The ImageNette dataset could be downloaded from [data](https://drive.google.com/file/d/1nyYlZFvpSRl_ogmaO0cm8-hMT4YMYe9D/view?usp=drive_link).The directory structure should be like:
+
+```
+imagenette2-160
++-- train
++-- val
+```
 
 ### Running the HAM method on ImageNette
 
@@ -89,6 +107,9 @@ you can run the following script:
 ```
 bash ./0301_1_aham_netee_p18_nonorm.sh
 ```
+
+## HAM pretrained checkpoints
+We also provide the [checkpoints](https://drive.google.com/drive/folders/1WQ17FUmkwgSpg09o_0frxZUhYPk-2Cyk?usp=drive_link) pretrained by our HAM method. 
 
 
 ## About us
