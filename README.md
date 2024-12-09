@@ -65,9 +65,9 @@ bash ./0726_2_cifar100_ham_keep_clean0d3_60epo.sh
 
 ## SVHN
 
-### Prepare the data
+### Prepare the data and models
 
-The SVHN dataset will be downloaded automatically when running the code.
+Please download the pretrained models and place them under ./SVHN/, respectively. The SVHN dataset will be downloaded automatically when running the code.
 
 ### Running the HAM method on SVHN
 
